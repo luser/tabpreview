@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<overlay id="tabpreview-overlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+         xmlns:html="http://www.w3.org/1999/xhtml">
+  <script src="overlay.js"/>
+
+  <window id="main-window">
+  <popupset id="mainPopupSet">
+      <tooltip id="tabpreview">
+        <window xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" xmlns:html="http://www.w3.org/1999/xhtml" flex="0">
+          <html:canvas id="tabpreviewcanvas"/>
+        </window>
+      </tooltip>
+  </popupset>
+  </window>
+</overlay>

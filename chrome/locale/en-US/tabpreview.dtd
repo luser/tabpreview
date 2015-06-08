@@ -1,0 +1,14 @@
+<!ENTITY TabPreview "Tab Preview">
+<!ENTITY TabPreviewOptions "Tab Preview Options">
+<!ENTITY PreviewSize "Preview Size">
+<!ENTITY MatchTabs "Size preview width to match tabs">
+<!ENTITY SizeTo "Size preview width to">
+<!ENTITY PercentOfScreen "percent of browser screen">
+<!ENTITY SizeToExactly "Size preview width to exactly">
+<!ENTITY Pixels "pixels">
+<!ENTITY PreviewDelay "Preview Delay">
+<!ENTITY BeforeDisplaying "Before displaying preview, wait">
+<!ENTITY Milliseconds "milliseconds (1s = 1000ms)">
+<!ENTITY PreviewScrolled "Preview Scrolled View">
+<!ENTITY DisplayScrolled "Have preview display the scrolled position">
+<!ENTITY DisplayTopLeft "Have preview display from the top left of the page">

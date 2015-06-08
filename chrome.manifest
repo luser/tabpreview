@@ -1,0 +1,3 @@
+content	tabpreview	jar:chrome/tabpreview.jar!/content/
+locale	tabpreview	en-US	jar:chrome/tabpreview.jar!/locale/en-US/
+overlay	chrome://browser/content/browser.xul	chrome://tabpreview/content/overlay.xul

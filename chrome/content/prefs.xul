@@ -1,0 +1,49 @@
+<?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
+<!DOCTYPE dialog SYSTEM "chrome://tabpreview/locale/tabpreview.dtd">
+<dialog id="prefs"
+	title="&TabPreview;"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	buttons="accept,cancel"
+	onload="loadPrefs(event)"
+	ondialogaccept="savePrefs(event)">
+  <script type="application/x-javascript" src="chrome://tabpreview/content/prefs.js"/>
+	<dialogheader title="&TabPreviewOptions;"/>
+
+      <groupbox flex="1">
+      <caption label="&PreviewSize;"/>
+		<radiogroup id="SizePreview">
+			<radio group="SizePreview" label="&MatchTabs;" value="1"/>
+			<radio group="SizePreview" label="&SizeTo;" value="2"/>
+ 				<hbox  align="center">
+          <label value="          "/>
+          <textbox id="PreviewPercent" maxlength="3" size="2"/>
+          <label value="&PercentOfScreen;"/>
+ 				</hbox>
+			<radio group="SizePreview" label="&SizeToExactly;" value="3"/>
+ 				<hbox  align="center">
+          <label value="          "/>
+          <textbox id="PreviewPixel" maxlength="3" size="2"/>
+          <label value="&Pixels;"/>
+ 				</hbox>
+		</radiogroup>
+	</groupbox>
+
+      <groupbox flex="1">
+      <caption label="&PreviewDelay;"/>
+		<checkbox id="DelayPreview" label="&BeforeDisplaying;"/>
+ 			<hbox  align="center">
+        <label value="          "/>
+        <textbox id="PreviewDelay" maxlength="4" size="2"/>
+        <label value="&Milliseconds;"/>
+ 			</hbox>
+	</groupbox>
+
+      <groupbox flex="1">
+      <caption label="&PreviewScrolled;"/>
+		<radiogroup id="ScrollingPreview">
+			<radio group="ScrollingPreview" label="&DisplayScrolled;" value="1"/>
+			<radio group="ScrollingPreview" label="&DisplayTopLeft;" value="2"/>
+		</radiogroup>
+	</groupbox>
+
+</dialog>
